@@ -1,0 +1,433 @@
+ <script language="JavaScript">
+        /* Visit our site at http://www.elahmad.com/ for more code
+        *  www.elahmad.com/
+         */
+        
+        <!-- Begin
+        function color(frm, clr, val) {
+        v = eval("0x" + frm[clr].value) + val;
+        if (v < 0 || v > 255) v -= val;
+        v = v.toString(16).toUpperCase();
+        while (v.length < 2) v = "0" + v;
+        frm[clr].value = v; nc = "";
+        for(i = 1; i < 8; i += 3) nc += frm.elements[i].value;
+        document.bgColor = nc;
+        }
+        function setval(myitem) {
+        v = prompt("bf" + myitem.name + " مثال : (00 )", myitem.value);
+        if (v) {
+        v = eval("0x" + v);
+        if ((v & 255) == v) {
+        myitem.value=v.toString(16).toUpperCase();
+        while (myitem.value.length < 2) myitem.value = "0" + myitem.value;
+        color(document.f, myitem.name, 0);
+              }
+           }
+        }
+        //  End -->
+        </script>
+    <style>
+        <!--
+        .intro{
+        position:absolute;
+        left:0;
+        top:0;
+        layer-background-color:white;
+        background-color:rgb(0, 221, 255);  
+        border:0.1px solid rgb(255, 255, 255) 
+        }
+        -->
+        </style>
+    <SCRIPT language=JavaScript>
+        <!-- Begin
+        /* Visit our site at http://www.elahmad.com/ for more code*/
+        mydate = new Date();
+        
+        var year=mydate.getYear()
+        if (year < 1000)
+        year+=1900
+        
+        var myweekday=mydate.getDate()
+        if (myweekday<10)
+        myweekday="0"+myweekday
+        
+        myday = mydate.getDay();
+        mymonth = mydate.getMonth();
+        
+        
+        if(myday == 0)
+        day = " الأحد "      
+        else if(myday == 1)
+        day = " الإثنين"
+        else if(myday == 2)
+        day = " الثلاثاء"   
+        else if(myday == 3)
+        day = " الاربعاء"   
+        else if(myday == 4)
+        day = " الخميس"
+        else if(myday == 5)
+        day = " الجمعة"
+        else if(myday == 6)
+        day = " السبت"
+        if(mymonth == 0) {
+        month = "كانون ثاني "}
+        else if(mymonth ==1)
+        month = "شباط "
+        else if(mymonth ==2)
+        month = "آذار "
+        else if(mymonth ==3)
+        month = "نيسان "
+        else if(mymonth ==4)
+        month = "أيار "
+        else if(mymonth ==5)
+        month = "حزيران "
+        else if(mymonth ==6)
+        month = "تموز "
+        else if(mymonth ==7)
+        month = "آب "
+        else if(mymonth ==8)
+        month = "أيلول "
+        else if(mymonth ==9)
+        month = "تشرين أول "
+        else if(mymonth ==10)
+        month = "تشرين ثاني "
+        else if(mymonth ==11)
+        month = "كانون أول "
+        // End -->
+        </SCRIPT>
+    <script language="JavaScript"> 
+ 
+        /* Visit our site at http://www.elahmad.com/ for more code
+         */
+         
+        <!-- begin script
+        var ddt1, delay;
+        function debuteTemps1() {
+          var hhmmss = "  ", mymin, sec;
+          delay = 1000;
+         
+          adate = new Date();
+          hhmmss += adate.getHours();
+          mymin = adate.getMinutes();
+          if (mymin < 10) hhmmss += ":0" + mymin;
+          else hhmmss += ":" + mymin;
+          sec = adate.getSeconds();
+          if (sec < 10) hhmmss += ":0" + sec;
+          else hhmmss += ":" + sec;
+          hhmmss = " " + hhmmss;
+          document.Temps11.heure.value = hhmmss;
+         
+          ddt1 = setTimeout("debuteTemps1(delay)",delay);
+        }
+        //  end script -->
+        </script>
+    <script>
+        function openpopup(){
+        // غير العنوان للذي يناسبك
+        window.open("http://www.elahmad.com/pagerank.php")
+        }
+        
+        function get_cookie(Name) {
+          var search = Name + "="
+          var returnvalue = "";
+          if (document.cookie.length > 0) {
+            offset = document.cookie.indexOf(search)
+            if (offset != -1) { // if cookie exists
+              offset += search.length
+              // set index of beginning of value
+              end = document.cookie.indexOf(";", offset);
+              // set index of end of cookie value
+              if (end == -1)
+                 end = document.cookie.length;
+              returnvalue=unescape(document.cookie.substring(offset, end))
+              }
+           }
+          return returnvalue;
+        }
+        
+        function loadpopup(){
+        if (get_cookie('popped')==''){
+        openpopup()
+        document.cookie="popped=yes"
+        }
+        }
+        // للمزيد من أكواد الجافا تفضل بزيارتنا
+        // http://www.elahmad.com/
+        </script>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>محاسبه النفس </title>
+   
+        <script>
+if (!confirm("هل تريد دخول صفحه تومي ؟"))
+window.location=history.go(-1)
+</script>
+
+
+</head>
+
+<body>
+    <A href="javascript:window.location.reload()" target="_self">اضغط هنا لتحديث الصفحة</A>
+
+    <br>
+    <A href="javascript:self.close()">أغلق هذه الصفحة</A>
+    <br>
+    <A  href="javascript:history.go(-1)">عد الى الخلف</A>
+<br>
+<SCRIPT LANGUAGE="Javascript"> 
+    //http://www.elahmad.com
+    name=window.prompt("ادخل أسمك."); 
+    document.write("<H1 align=center>اهلا بك في موقع تومي يا " +name+".</H1>") 
+    //-->
+    </script>
+<CENTER>
+    <SCRIPT>
+    document.write("<b><font face=Tahoma color=#006600 size=2>" + day+ " - " +myweekday+ " - " +month + " - " + year + "</font></b>");
+    </SCRIPT>
+    </CENTER>
+    <div align="center">
+        <form name="f">
+        <table border="1">
+        <tr>
+        <td colspan="3" align="center" bgcolor="#ff0000">أحمر</td>
+        <td colspan="3" align="center" bgcolor="#00ff00">أخضر</td>
+        <td colspan="3" align="center" bgcolor="#000ff">أزرق</td>
+        </tr>
+        <tr>
+        <td><input type="button" name="rm" value="<" onclick = "color(this.form, 'Red' , -1);"></td>
+        <td><input type="button" name="الأحمر" value="AF" onclick = "setval(this);"></td>
+        <td><input type="button" name="rp" value=">" onclick = "color(this.form, 'Red', 1);"></td>
+        <td><input type="button" name="gm" value="<" onclick = "color(this.form, 'Green', -1);"></td>
+        <td><input type="button" name="الأخضر" value="BF" onclick = "setval(this);"></td>
+        <td><input type="button" name="gp" value=">" onclick = "color(this.form, 'Green', 1);"></td>
+        <td><input type="button" name="bm" value="<" onclick = "color(this.form, 'Blue', -1);"></td>
+        <td><input type="button" name="الأزرق" value="CF" onclick = "setval(this);"></td>
+        <td><input type="button" name="bp" value=">" onclick = "color(this.form, 'Blue', 1);"></td>
+        </tr>
+        </table>
+        </form>
+        </div>
+    </body>
+    <BODY onLoad="debuteTemps1()" onUnload="clearTimeout(ddt1)">
+        <form name="Temps11">
+            <input type="text" name="heure" size="8"><br> 
+            </form> 
+            <div id="i1" class="intro"></div>
+            <script language="JavaScript1.2">
+            
+            /*
+            * Visit our site at http://www.elahmad.com/ for more code
+            */
+            
+            //change speed here
+            var speed=5
+            if (document.layers){
+            var reference=window.innerWidth/window.innerHeight
+            var temp=eval("document.i1.clip")
+            temp.left=temp.top=0
+            temp.right=window.innerWidth
+            temp.bottom=window.innerHeight
+            }
+            else if (document.all){
+            var reference=document.body.clientWidth/document.body.clientHeight
+            var rightclip,leftclip,topclip,bottomclip
+            var temp=document.all.i1.style
+            topclip=leftclip=0
+            rightclip=temp.width=document.body.clientWidth
+            bottomclip=temp.height=document.body.clientHeight
+            }
+            
+            
+            function doit(){
+            window.scrollTo(0,0)
+            if (document.layers){
+            if (temp.left>window.innerWidth/2)
+            clearInterval(stopit)
+            temp.left+=reference*speed
+            temp.top+=speed
+            temp.right-=reference*speed
+            temp.bottom-=speed
+            }
+            else if (document.all){
+            if (leftclip>document.body.clientWidth/2)
+            clearInterval(stopit)
+            temp.clip="rect( "+topclip+" "+rightclip+" "+bottomclip+" "+leftclip+")"
+            leftclip+=reference*speed
+            topclip+=speed
+            rightclip-=reference*speed
+            bottomclip-=speed
+            }
+            }
+            stopit=setInterval("doit()",100)
+            
+            </script>    
+    </BODY>
+    <SCRIPT language="JavaScript">
+
+        /*****************************************
+        * Visit our site at http://www.elahmad.com/ for more code
+        ******************************************/ 
+        <!-- Begin 
+        var ALAA = 36; 
+        now = new Date(); 
+        var rd = now.getSeconds(); 
+        var ra = rd % ALAA; 
+        var re = ++ra; 
+        var sori = ""; 
+        if (re == 1) { 
+        
+        sori = "طريق الألف ميل يبدأ بخطوة"; 
+        } 
+        if (re == 2) { 
+        
+        sori = "من نشأ على شيء شاب عليه"; 
+        } 
+        if (re == 3) { 
+        
+        sori = "حبل الكذب قصير مهما طال"; 
+        } 
+        if (re == 4) { 
+        
+        sori = "خير الكلام ما قل و دل"; 
+        } 
+        if (re == 5) { 
+        
+        sori = "إنما الأعمال بالنيات"; 
+        } 
+        if (re == 6) { 
+        
+        sori = "على هامان يا فرعون"; 
+        } 
+        if (re == 7) { 
+        
+        sori = "خير الامور أوسطها"; 
+        } 
+        if (re == 8) { 
+        
+        sori = "من شابه أباه فما ظلم"; 
+        } 
+        if (re == 9) { 
+        
+        sori = "من طلب العلا سهر الليالي"; 
+        } 
+        if (re == 10) { 
+        
+        sori = "من حفر حفرة لأخيه وقع فيها"; 
+        } 
+        if (re == 11) { 
+        
+        sori = "إتق شر من أحسنت إليه"; 
+        } 
+        if (re == 12) { 
+        
+        sori = "لا تنسى ذكر الله"; 
+        }
+        if (re == 13) { 
+        
+        sori = "من تدخل فيما لا يعنيه لقي ما لا يرضيه"; 
+        }
+        if (re == 14) { 
+        
+        sori = "إن الطيور على أشكالها تقع"; 
+        }
+        if (re == 15) { 
+        
+        sori = "إن لم تكن ذئباً أكلتك الذئاب"; 
+        }
+        if (re == 16) { 
+        
+        sori = "ليس كل ما يلمع ذهباً"; 
+        }
+        if (re == 17) { 
+        
+        sori = "إذا أكرمت الكريم ملكته و إن أكرمت اللئيم تمرد"; 
+        }
+        if (re == 18) { 
+        
+        sori = "يد واحدة لا تصفق"; 
+        }
+        if (re == 19) { 
+        
+        sori = "احفظ قرشك الأبيض ليومك الأسود"; 
+        }
+        if (re == 20) { 
+        
+        sori = "رب صدفة خير من ألف ميعاد"; 
+        }
+        if (re == 21) { 
+        
+        sori = "اعمل لدنياك كأنك تعيش أبداً و اعمل لآخرتك كأنك تموت غداً"; 
+        }
+        if (re == 22) { 
+        
+        sori = "لسانك حصانك ان صنته صانك و ان خنته خانك"; 
+        }
+        if (re == 23) { 
+        
+        sori = "الجار قبل الدار"; 
+        }
+        if (re == 24) { 
+        
+        sori = "الجنون فنون"; 
+        }
+        if (re == 25) { 
+        
+        sori = "الباب يلي يجيك منه الريح سده و استريح"; 
+        }
+        if (re == 26) { 
+        
+        sori = "العين لا تعلو عن الحاجب"; 
+        }
+        if (re == 27) { 
+        
+        sori = "الوقت كالسيف ان لم تقطعه قطعك"; 
+        }
+        if (re == 28) { 
+        
+        sori = "عصفور باليد أحسن من عشرة عالشجرة"; 
+        }
+        if (re == 29) { 
+        
+        sori = "الكلام من فضة و السكوت من ذهب"; 
+        }
+        if (re == 30) { 
+        
+        sori = "العلم في الصغر كالنقش على الحجر"; 
+        }
+        if (re == 31) { 
+        
+        sori = "الكذب داء والصدق دواء"; 
+        }
+        if (re == 32) { 
+        
+        sori = "اذا لم تستح فافعل ما شئت"; 
+        }
+        if (re == 33) { 
+        
+        sori = "السكوت علامة الرضا"; 
+        } 
+        if (re == 34) { 
+        
+        sori = "الصديق وقت الضيق"; 
+        }
+        if (re == 35) { 
+        
+        sori = "الساكت عن الحق شيطان أخرس"; 
+        }
+        if (re == 36) { 
+        
+        sori = "تجري الرياح بما لا تشتهي السفن"; 
+        }
+        
+        var ALAA=""+sori+""; 
+        document.write(ALAA); 
+        // End --> 
+    
+
+
+                  
